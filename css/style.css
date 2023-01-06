@@ -1,0 +1,184 @@
+/** GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+:root {
+    --header: #B2A4FF;
+    --footer: #B2A4FF;
+    --text: #FFDEB4;
+    --hover: #FFB4B4;
+    --body: #FFF9CA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menuWrapper {
+    width: 100%;
+    height: 75px;
+    background-color: var(--header);
+}
+
+.logo {
+    color: var(--text);
+    font-size: 32px;
+    font-weight: bolder;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Moon Dance', cursive;
+
+}
+
+#menu {
+    width: 80%;
+    height: 75px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuButtons {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif !important;
+    color: var(--text);
+    transition: .2s ease-in-out;
+}
+
+.menuButtons ul {
+    list-style-type: none;
+    display: flex;
+    text-decoration: none;
+}
+
+.menuButtons ul li {
+    margin-left: .5rem;
+}
+
+.menuButtons ul li a {
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    color: var(--text);
+    transition: .2s ease-in-out;
+}
+
+.menuButtons ul li span {
+    cursor: default;
+}
+
+
+.menuButtons ul a:hover {
+    text-decoration: none;
+    color: var(--hover);
+}
+
+#mainContent {
+    width: 100%;
+    height: calc(100vh - 75px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(178, 164, 255);
+    background: linear-gradient(90deg, rgba(178, 164, 255, 0.8939950980392157) 0%, rgba(255, 180, 180, 1) 37%, rgba(255, 222, 180, 1) 100%);
+    user-select: none;
+}
+
+#mainContent h1 {
+    font-weight: bolder;
+    font-family: 'Moon Dance', cursive;
+    font-size: 12rem;
+    color: #B2A4FF;
+    text-shadow: 0 0 5px #FFF, 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #B2A4FF, 0 0 10px #B2A4FF, 0 0 20px #B2A4FF, 0 0 25px #B2A4FF, 0 0 30px #B2A4FF;
+    user-select: none;
+}
+
+#mainContent h3 {
+    color: #A31ACB;
+    font-weight: bolder;
+    font-family: 'Moon Dance', cursive;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 5px #FFF, 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #B2A4FF, 0 0 10px #B2A4FF, 0 0 20px #B2A4FF, 0 0 25px #B2A4FF, 0 0 30px #B2A4FF;
+    user-select: none;
+}
+
+#mainContent button {
+    width: 16rem;
+    color: #FFDEB4;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    font-family: 'Kanit', sans-serif !important;
+    cursor: pointer;
+    background-color: #B2A4FF;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    padding: 1rem;
+    transition: .2s ease-in-out;
+    user-select: none;
+}
+
+#mainContent button:hover {
+    background-color: rgba(178, 164, 255, 0.65);
+}
+
+
+#footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--footer);
+}
+
+.footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+.footerContent ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif !important;
+    color: var(--text);
+    transition: .2s ease-in-out;
+    text-align: center;
+}
+
+.footerContent ul li {
+    cursor: pointer;
+    margin: 2rem;
+}
+
+.footerContent ul li:hover {
+    color: var(--hover);
+}
+
+.footerContent .socialIcons {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.footerContent .socialIcons a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 25px;
+    margin-left: 1.2rem;
+}
+
+.footerContent .socialIcons a:hover {
+    color: var(--hover);
+}
