@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+:root {
+    --header: #B2A4FF;
+    --footer: #B2A4FF;
+    --text: #FFDEB4;
+    --hover: #FFB4B4;
+    --body: #FFF9CA;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.musicBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 75px);
+    background: rgb(178, 164, 255);
+    background: linear-gradient(90deg, rgba(178, 164, 255, 0.8939950980392157) 0%, rgba(255, 180, 180, 1) 37%, rgba(255, 222, 180, 1) 100%);
+}
+
+.music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #A31ACB;
+    text-shadow: 0 0 5px #FFF, 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #B2A4FF, 0 0 10px #B2A4FF, 0 0 20px #B2A4FF, 0 0 25px #B2A4FF, 0 0 30px #B2A4FF;
+    display: inline-flex;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.player {
+    position: relative;
+    width: 500px;
+    min-height: 100px;
+    background: rgb(178, 164, 255);
+    background: linear-gradient(90deg, rgba(178, 164, 255, 0.8939950980392157) 0%, rgba(255, 180, 180, 1) 37%, rgba(255, 222, 180, 1) 100%);
+    border: 2px solid var(--hover);
+    border-radius: 80px;
+    padding: 20px 30px;
+    box-shadow: -10px -10px 15px var(--hover),
+        10px 10px 15px rgba(0, 0, 0, .1),
+        inset -5px -5px 15px var(--hover),
+        inset 5px 5px 15px rgba(0, 0, 0, .1)
+}
+
+.btns {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.btns span {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: rgb(178, 164, 255);
+    background: linear-gradient(90deg, rgba(178, 164, 255, 0.8939950980392157) 0%, rgba(255, 180, 180, 1) 37%, rgba(255, 222, 180, 1) 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A31ACB;
+    cursor: pointer;
+    box-shadow: inset 0 -5px 5px rgba(0, 0, 0, .1),
+        0 5px 10px rgba(0, 0, 0, .1),
+        0 10px 15px rgba(0, 0, 0, .1);
+    ;
+}
+
+.btns span:active,
+.btns span.active {
+    color: var(--text);
+    box-shadow: inset 0 -7px 5px rgba(0, 0, 0, .025),
+        inset 0 5px 10px rgba(0, 0, 0, .15);
+}
+
+.btns span.playPause {
+    width: 100px;
+    height: 100px;
+}
+
+.btns span ion-icon {
+    font-size: 2rem;
+}
+
+.btns span.playPause ion-icon {
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+    width: 100%;
+    height: 74px;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header);
+}
+
+.logo {
+    color: var(--text);
+    font-size: 32px;
+    font-weight: bolder;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Moon Dance', cursive;
+}
+
+.logoFooter {
+    color: var(--text);
+    font-size: 32px;
+    font-weight: bolder;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Moon Dance', cursive;
+}
+
+#menu {
+    position: relative;
+    z-index: 99;
+    width: 80%;
+    height: 75px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuButtons {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif !important;
+    color: var(--text);
+    transition: .2s ease-in-out;
+}
+
+.menuButtons ul {
+    list-style-type: none;
+    display: flex;
+    text-decoration: none;
+}
+
+.menuButtons ul li {
+    margin-left: .5rem;
+}
+
+.menuButtons ul li a {
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    color: var(--text);
+    transition: .2s ease-in-out;
+}
+
+.menuButtons ul a:hover {
+    text-decoration: none;
+    color: var(--hover);
+}
+
+.activeLinks {
+    border-bottom: 4px dotted var(--text);
+    transition: .4s ease-in-out;
+}
+
+.activeLinks:hover {
+    border-bottom: 4px dotted var(--hover);
+}
+
+.hamburger {
+    display: none;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: var(--text);
+    border-radius: 6px;
+    z-index: 1;
+    transform-origin: 0 0;
+    transition: .4s ease-in-out;
+}
+
+.hamburger:hover span:nth-child(2) {
+    transform: translateX(10px);
+    background-color: var(--hover);
+}
+
+.hamburger.isActive span:nth-child(1) {
+    transform: translate(0px, -2px) rotate(45deg);
+}
+
+.hamburger.isActive span:nth-child(3) {
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+.hamburger.isActive span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(15px);
+}
+
+.hamburger.isActive:hover span {
+    background-color: var(--hover);
+}
+
+#footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--footer);
+}
+
+.footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.footerContent ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif !important;
+    color: var(--text);
+    transition: .2s ease-in-out;
+    text-align: center;
+}
+
+.footerContent ul li {
+    cursor: pointer;
+    margin: 2rem;
+}
+
+.footerContent ul li:hover {
+    color: var(--hover);
+}
+
+.footerContent .socialIcons {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.footerContent .socialIcons a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 25px;
+    margin-left: 1.2rem;
+}
+
+.footerContent .socialIcons a:hover {
+    color: var(--hover);
+}
+
+@media only screen and (max-width:1320px) {}
+
+@media only screen and (max-width:1100px) {}
+
+@media only screen and (max-width:900px) {
+    .hamburger {
+        display: block;
+    }
+
+    #menu {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .menuButtons {
+        height: 0;
+        position: absolute;
+        top: 74px;
+        right: 0;
+        left: 0;
+        background: var(--header);
+        transition: .2s ease-in-out;
+        overflow: hidden;
+    }
+
+    .menuButtons.active {
+        height: calc(100vh - 75px);
+    }
+
+    .menuButtons.active ul {
+        opacity: 1;
+    }
+
+    .menuButtons ul {
+        display: block;
+        width: fit-content;
+        text-align: center;
+        justify-content: center;
+        margin: 80px auto 0 auto;
+        transition: .5s ease-in-out;
+        opacity: 0;
+    }
+
+    .menuButtons ul li a {
+        margin-bottom: 18px;
+    }
+
+    .footerContent ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footerContent ul li {
+        cursor: pointer;
+        margin: .2rem;
+    }
+}
+
+@media only screen and (max-width:768px) {}
+
+@media only screen and (max-width:575px) {
+    .player {
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width:468px) {
+    .logoFooter {
+        display: none;
+    }
+
+    .player {
+        width: 400px;
+    }
+}

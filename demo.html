@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/demo.css">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- consola düşen favicon.ico 404 (not found) hatasının kaldırılması eklendi. -->
+    <link rel="shortcut icon" href="#">
+    <!-- consola düşen favicon.ico 404 (not found) hatasının kaldırılması eklendi. -->
 
     <title>LIM - Life is Music</title>
 </head>
@@ -30,10 +33,10 @@
 
             <div class="menuButtons">
                 <ul>
-                    <li><a href="#" class="links activeLinks"> Ana sayfa</a></li>
+                    <li><a href="index.html" class="links"> Ana sayfa</a></li>
                     <li><a href="#" class="links "> Destek</a></li>
                     <li><a href="#" class="links "> İndir</a></li>
-                    <li><a href="demo.html" class="links "> Ücretsiz dene</a></li>
+                    <li><a href="demo.html" class="links activeLinks"> Ücretsiz dene</a></li>
                     <li><a href="#" class="links "> Kaydol</a></li>
                     <li><a href="#" class="links "> Oturum aç</a></li>
                 </ul>
@@ -41,13 +44,18 @@
         </div>
     </Header>
 
-    <div id="mainContent">
-        <h1 class="mainText">
-            Life is Music
-        </h1>
-        <h3>Hayata renk katan şarkılar burada.</h3>
-
-        <button>Şimdi ücretsiz dene</button>
+    <div class="musicBox">
+        <div class="music">
+            <h2 class="title">Music Name</h2>
+            <div class="player">
+                <audio src=""></audio>
+                <div class="btns">
+                    <span class="prev"><ion-icon name="play-back-outline"></ion-icon></span>
+                    <span class="playPause"><ion-icon name="play-outline"></ion-icon></span>
+                    <span class="next"><ion-icon name="play-forward-outline"></ion-icon></span>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="footer">
@@ -74,7 +82,14 @@
 
 
 
+
+    <!-- Ionicons CDN -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Ionicons CDN -->
+
     <script src="js/main.js"></script>
+    <script src="js/demo.js"></script>
 </body>
 
 </html>
